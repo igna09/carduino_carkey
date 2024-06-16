@@ -78,6 +78,8 @@ public class BluetoothService extends Service {
         Toast.makeText(this, "BluetoothService Started", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onStart");
 
+        connectToESP();
+
         return START_STICKY;
     }
 
